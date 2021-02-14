@@ -7,7 +7,7 @@
 
 - name: Enable service
   systemd:
-    name: php-fpm
+    name: php7.3-fpm
     enabled: yes
 
 - name: Remove unnecessary files (default php-fpm conf)
