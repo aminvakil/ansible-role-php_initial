@@ -10,8 +10,8 @@
     name: php7.3-fpm
     enabled: yes
 
-- name: Remove unnecessary files (default php-fpm conf)
-  file:
-    path: /etc/php/7.3/fpm/pool.d/www.conf
-    state: absent
-  notify: restart php-fpm
+# - name: Remove unnecessary files (default php-fpm conf)
+#   file:
+#     path: /etc/php/7.3/fpm/pool.d/www.conf
+#     state: absent
+#   notify: restart php-fpm
