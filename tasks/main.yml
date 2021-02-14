@@ -1,1 +1,16 @@
 ---
+- name: Install php
+  apt:
+    name: "{{ php_packages }}"
+    install_recommends: no
+    state: present
+
+- name: Enable service
+  systemd:
+    name: php-fpm
+    enabled: yes
+
+- name: Remove unnecessary files (default php-fpm conf)
+  file:
+    path: /etc/php-fpm.d/www.conf
+    state: absent
