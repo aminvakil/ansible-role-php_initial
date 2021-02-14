@@ -12,5 +12,5 @@
 
 - name: Remove unnecessary files (default php-fpm conf)
   file:
-    path: /etc/php-fpm.d/www.conf
+    path: /etc/php/7.3/fpm/pool.d/www.conf
     state: absent
