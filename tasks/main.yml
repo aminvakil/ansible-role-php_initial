@@ -14,3 +14,4 @@
   file:
     path: /etc/php/7.3/fpm/pool.d/www.conf
     state: absent
+  notify: restart php-fpm

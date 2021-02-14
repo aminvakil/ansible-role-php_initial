@@ -1,1 +1,5 @@
 ---
+- name: restart php-fpm
+  systemd:
+    name: php7.3-fpm
+    state: restarted
