@@ -1,5 +1,5 @@
 ---
-- php_packages:
+php_packages:
   - php
   - php-cli
   - php-common
